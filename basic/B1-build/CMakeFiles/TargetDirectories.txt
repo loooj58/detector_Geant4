@@ -1,0 +1,2 @@
+/home/ta_nyan/Documents/examples/basic/B1-build/CMakeFiles/B1.dir
+/home/ta_nyan/Documents/examples/basic/B1-build/CMakeFiles/exampleB1.dir
