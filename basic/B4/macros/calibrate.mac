@@ -1,0 +1,45 @@
+/run/initialize
+
+/gun/particle e-
+/gun/energy 100 MeV
+/run/beamOn 1000
+
+/gun/particle e-
+/gun/energy 1 GeV
+/run/beamOn 1000
+
+/gun/particle e-
+/gun/energy 2 GeV
+/run/beamOn 1000
+
+/gun/particle e-
+/gun/energy 3 GeV
+/run/beamOn 1000
+
+/gun/particle e-
+/gun/energy 4  
+/run/beamOn 1000
+
+/gun/particle e-
+/gun/energy 5 GeV
+/run/beamOn 1000
+
+/gun/particle e-
+/gun/energy 6 GeV
+/run/beamOn 1000
+
+/gun/particle e-
+/gun/energy 7 GeV
+/run/beamOn 1000
+
+/gun/particle e-
+/gun/energy 8 GeV
+/run/beamOn 1000
+
+/gun/particle e-
+/gun/energy 9 GeV
+/run/beamOn 1000
+
+/gun/particle e-
+/gun/energy 10 GeV
+/run/beamOn 1000

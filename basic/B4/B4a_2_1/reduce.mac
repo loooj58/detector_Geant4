@@ -1,0 +1,33 @@
+ /run/initialize
+
+/gun/particle e-
+
+/gun/energy 0.5 GeV
+/run/beamOn 1000
+
+/gun/energy 1.5 GeV
+/run/beamOn 1000
+
+/gun/energy 2.5 GeV
+/run/beamOn 1000
+
+/gun/energy 3.5 GeV
+/run/beamOn 1000
+
+/gun/energy 4.5 GeV
+/run/beamOn 1000
+
+/gun/energy 5.5 GeV
+/run/beamOn 1000
+
+/gun/energy 6.5 GeV
+/run/beamOn 1000
+
+/gun/energy 7.5 GeV
+/run/beamOn 1000
+
+/gun/energy 8.5 GeV
+/run/beamOn 1000
+
+/gun/energy 9.5 GeV
+/run/beamOn 1000

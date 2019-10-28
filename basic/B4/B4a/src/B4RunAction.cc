@@ -35,6 +35,8 @@
 #include "G4UnitsTable.hh"
 #include "G4SystemOfUnits.hh"
 
+#include <stdio.h>
+
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 B4RunAction::B4RunAction()
@@ -113,7 +115,12 @@ void B4RunAction::EndOfRunAction(const G4Run* /*run*/)
     else {
       G4cout << "for the local thread " << G4endl << G4endl; 
     }
-    
+
+    FILE *fp = fopen("calibration.txt", "a+");
+    fprintf(fp, "\n");
+    fclose(fp);
+
+
     G4cout << " EAbs : mean = " 
        << G4BestUnit(analysisManager->GetH1(0)->mean(), "Energy") 
        << " rms = " 

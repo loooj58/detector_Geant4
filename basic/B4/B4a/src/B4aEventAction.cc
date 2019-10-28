@@ -75,6 +75,10 @@ void B4aEventAction::EndOfEventAction(const G4Event* event)
   auto analysisManager = G4AnalysisManager::Instance();
 
   // fill histograms
+  FILE *fp = fopen("calibration.txt", "a+");
+  fprintf(fp, "%f\n", fEnergyGap);
+  fclose(fp);
+
   analysisManager->FillH1(0, fEnergyAbs);
   analysisManager->FillH1(1, fEnergyGap);
   analysisManager->FillH1(2, fTrackLAbs);

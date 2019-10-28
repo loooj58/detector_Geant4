@@ -30,6 +30,8 @@
 /gui/addMenu run Run
 /gui/addButton run "beamOn 1" "/run/beamOn 1"
 /gui/addButton run run1 "/control/execute run1.mac"
+/gui/addButton run calibrate "/control/execute calibrate.mac"
+/gui/addButton run reduce "/control/execute reduce.mac"
 /gui/addMenu gun Gun
 /gui/addButton gun "50 MeV" "/gun/energy 50 MeV"
 /gui/addButton gun "1 GeV" "/gun/energy 1 GeV"
@@ -52,21 +54,29 @@
 /gui/addButton viewer "Flush viewer (= refresh + update)" "/vis/viewer/flush"
 /gui/addButton viewer "Update scene" "/vis/scene/notifyHandlers"
 /run/printProgress 100
-/control/execute run1.mac
+/control/execute calibrate.mac
 /run/initialize
-/tracking/verbose 1
-/run/beamOn 1
+/gun/particle e-
+/gun/energy 100 MeV
+/run/beamOn 5000
 /vis/scene/notifyHandlers scene-0
-/gun/particle mu+
-/gun/energy 3 MeV
-/run/beamOn 3
-/tracking/verbose 0
-/run/printProgress 5
-/run/beamOn 20
-/globalField/setValue 0.2 0 0 tesla
-/run/beamOn 3
-/process/list
-/process/inactivate eBrem
-/run/physicsModified
-/run/beamOn 20
-/run/beamOn 1
+/gun/energy 1 GeV
+/run/beamOn 5000
+/gun/energy 2 GeV
+/run/beamOn 5000
+/gun/energy 3 GeV
+/run/beamOn 5000
+/gun/energy 4 GeV
+/run/beamOn 5000
+/gun/energy 5 GeV
+/run/beamOn 5000
+/gun/energy 6 GeV
+/run/beamOn 5000
+/gun/energy 7 GeV
+/run/beamOn 5000
+/gun/energy 8 GeV
+/run/beamOn 5000
+/gun/energy 9 GeV
+/run/beamOn 5000
+/gun/energy 10 GeV
+/run/beamOn 5000

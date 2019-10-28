@@ -11,6 +11,8 @@
 /gui/addMenu run Run
 /gui/addButton run "beamOn 1" "/run/beamOn 1"
 /gui/addButton run run1 "/control/execute run1.mac"
+/gui/addButton run calibrate "/control/execute calibrate.mac"
+/gui/addButton run reduce "/control/execute reduce.mac"
 #
 # Gun menu :
 /gui/addMenu gun Gun
